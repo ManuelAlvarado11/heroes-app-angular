@@ -3,7 +3,6 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
 
 @NgModule({
   declarations: [NotFoundPageComponent],
-
   exports: [NotFoundPageComponent],
 })
 export class SharedModule {}
