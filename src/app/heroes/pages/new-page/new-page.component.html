@@ -1,1 +1,62 @@
-<p>new-page works!</p>
+<h1>
+  Agregar / Editar Heroe
+  <small> Superman</small>
+</h1>
+
+<mat-divider class="mb-2"></mat-divider>
+
+<div class="grid">
+  <div class="col-12 sm:col-6">
+    <mat-card>
+      <mat-card-content>
+        <div class="grid">
+          <!-- NOMBRE -->
+          <mat-form-field class="col-12 sm:col-6">
+            <mat-label>Super Heroe</mat-label>
+            <input matInput type="text" required />
+          </mat-form-field>
+          <!-- ALTER EGO -->
+          <mat-form-field class="col-12 sm:col-6">
+            <mat-label>Alter ego</mat-label>
+            <input matInput type="text" required />
+          </mat-form-field>
+          <!-- PRIMERA APARACION -->
+          <mat-form-field class="col-12">
+            <mat-label>Primera aparicion</mat-label>
+            <input matInput type="text" required />
+          </mat-form-field>
+          <!-- PERSONAJES -->
+          <mat-form-field class="col-12">
+            <mat-label>Personajes</mat-label>
+            <input matInput type="text" required />
+          </mat-form-field>
+          <!-- CREADOR -->
+          <mat-form-field class="col-12">
+            <mat-label>Creador</mat-label>
+            <mat-select required>
+              <mat-option
+                *ngFor="let publisher of publishers"
+                [value]="publisher.id"
+              >
+                {{ publisher.value }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <!-- ACTIONS -->
+        <div class="flex">
+          <button mat-flat-button color="warn">Borrar</button>
+          <span class="spacer"></span>
+          <button mat-flat-button color="primary">Guardar</button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="col-12 sm:col-6">
+    <mat-card>
+      <img mat-card-image src="" alt="imagen de heroe" />
+    </mat-card>
+  </div>
+</div>

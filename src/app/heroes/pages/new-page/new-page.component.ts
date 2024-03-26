@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class NewPageComponent {
 
+  public publishers: any[] = [
+    { id: 'DC Comits', value: 'DC - Comits'},
+    { id: 'Marvel Comits', value: 'Marvel - Comits'},
+  ]
+
 }
