@@ -15,12 +15,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    // COMPONENTS
+    // PAGES
     HeroPageComponent,
     LayoutPageComponent,
     ListPageComponent,
     NewPageComponent,
     SearchPageComponent,
+
+    // COMPONENTS
     HeroCardComponent,
 
     // PIPES
