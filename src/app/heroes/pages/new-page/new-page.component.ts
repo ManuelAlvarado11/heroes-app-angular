@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
+import { switchMap } from 'rxjs';
+
 import { Hero, Publisher } from '../../interfaces/hero.interface';
 import { HeroesService } from '../../services/heroes.service';
 
@@ -8,7 +11,7 @@ import { HeroesService } from '../../services/heroes.service';
   templateUrl: './new-page.component.html',
   styleUrl: './new-page.component.css',
 })
-export class NewPageComponent {
+export class NewPageComponent implements OnInit {
   // Propiedades
   public publishers: any[] = [
     { id: 'DC Comits', value: 'DC - Comits' },
@@ -26,7 +29,26 @@ export class NewPageComponent {
   });
 
   // Constructor
-  constructor(private heroesService: HeroesService) {}
+  constructor(
+    private heroesService: HeroesService,
+    private activatedRoute: ActivatedRoute,
+    private router: Router
+  ) {}
+
+  ngOnInit(): void {
+    if(this.router.url.includes('edit')){
+      this.activatedRoute.params
+      .pipe(
+        switchMap(({ id }) => this.heroesService.getHeroById(id))
+      )
+      .subscribe((hero) => {
+        if (!hero) return this.router.navigateByUrl('heroes/list');
+
+        this.heroForm.reset(hero);
+        return;
+      });
+    }
+  }
 
   // Getters
   get currentHero(): Hero {
@@ -41,6 +63,7 @@ export class NewPageComponent {
       this.heroesService.updateHero(this.currentHero).subscribe((hero) => {
         // TODO: Mostrar mensaje
       });
+      return
     }
 
     this.heroesService.addHero(this.currentHero).subscribe((hero) => {
