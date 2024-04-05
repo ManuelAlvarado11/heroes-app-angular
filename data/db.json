@@ -13,7 +13,8 @@
       "publisher": "DC Comics",
       "alter_ego": "Bruce Wayne",
       "first_appearance": "Detective #11",
-      "characters": "Bruce Wayne"
+      "characters": "Bruce Wayne",
+      "alt_img": null
     },
     {
       "id": "dc-superman",
@@ -185,6 +186,15 @@
       "first_appearance": "zsfgasdf",
       "characters": "asdfasd",
       "alt_img": "https://i.pinimg.com/736x/e9/ed/10/e9ed10182ee0fb1bd82c7214a267e164.jpg"
+    },
+    {
+      "id": "reNSLf0",
+      "superhero": "new hero",
+      "publisher": "DC Comits",
+      "alter_ego": "1",
+      "first_appearance": "test",
+      "characters": "test1, test2",
+      "alt_img": "https://st3.depositphotos.com/4678277/37055/i/450/depositphotos_370554888-stock-photo-portrait-of-nice-attractive-content.jpg"
     }
   ]
 }
