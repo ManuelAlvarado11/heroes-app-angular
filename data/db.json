@@ -8,15 +8,6 @@
   ],
   "heroes": [
     {
-      "id": "dc-batman",
-      "superhero": "Batman",
-      "publisher": "DC Comics",
-      "alter_ego": "Bruce Wayne",
-      "first_appearance": "Detective #11",
-      "characters": "Bruce Wayne",
-      "alt_img": null
-    },
-    {
       "id": "dc-superman",
       "superhero": "Superman",
       "publisher": "DC Comics",
@@ -31,15 +22,6 @@
       "alter_ego": "Jay Garrick",
       "first_appearance": "Flash Comics #1",
       "characters": "Jay Garrick, Barry Allen, Wally West, Bart Allen"
-    },
-    {
-      "id": "dc-green",
-      "superhero": "Green Lantern",
-      "publisher": "DC Comits",
-      "alter_ego": "Alan Scott",
-      "first_appearance": "All-American Comics #16",
-      "characters": "Alan Scott, Hal Jordan, Guy Gardner, John Stewart, Kyle Raynor, Jade, Sinestro, Simon Baz",
-      "alt_img": "https://i.pinimg.com/550x/ef/4c/de/ef4cde5c45342f2e54c2645590ac5e0a.jpg"
     },
     {
       "id": "dc-arrow",
@@ -154,14 +136,6 @@
       "characters": "Clinton Francis Barton"
     },
     {
-      "id": "marvel-cyclops",
-      "superhero": "Cyclops",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Scott Summers",
-      "first_appearance": "X-Men #1",
-      "characters": "Scott Summers"
-    },
-    {
       "id": "marvel-silver",
       "superhero": "Silver Surfer",
       "publisher": "Marvel Comics",
@@ -177,24 +151,6 @@
       "first_appearance": "Comic #17",
       "characters": "Pesonaje 1, personaje 2",
       "alt_img": "https://w7.pngwing.com/pngs/347/781/png-transparent-hulk-marvel-heroes-2016-black-widow-clint-barton-captain-america-hulk-the-incredible-hulk-illustration-comics-avengers-superhero-thumbnail.png"
-    },
-    {
-      "id": "4xMahrh",
-      "superhero": "Antonio",
-      "publisher": "DC Comits",
-      "alter_ego": "Villalobos",
-      "first_appearance": "zsfgasdf",
-      "characters": "asdfasd",
-      "alt_img": "https://i.pinimg.com/736x/e9/ed/10/e9ed10182ee0fb1bd82c7214a267e164.jpg"
-    },
-    {
-      "id": "reNSLf0",
-      "superhero": "new hero",
-      "publisher": "DC Comits",
-      "alter_ego": "1",
-      "first_appearance": "test",
-      "characters": "test1, test2",
-      "alt_img": "https://st3.depositphotos.com/4678277/37055/i/450/depositphotos_370554888-stock-photo-portrait-of-nice-attractive-content.jpg"
     }
   ]
 }
