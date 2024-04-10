@@ -17,6 +17,7 @@ export class LoginPageComponent {
         '1234567'
       )
       .subscribe((user) => {
+        console.log(user)
         this.router.navigate(['/']);
       });
 
